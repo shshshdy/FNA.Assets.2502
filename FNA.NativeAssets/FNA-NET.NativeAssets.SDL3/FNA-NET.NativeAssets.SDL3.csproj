@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+	  <RootNamespace>Microsoft.Xna.Framework</RootNamespace>
+	  <AssemblyName>FNA.NativeAssets</AssemblyName>
+	  <EnableDefaultItems>false</EnableDefaultItems>
+	  <VersionPrefix>25.2.0</VersionPrefix>
+	  <VersionSuffix></VersionSuffix>
+  </PropertyGroup>
+	<PropertyGroup>
+		<PackageProjectUrl>https://github.com/shshshdy/FNA.Assets.2502</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/shshshdy/FNA.Assets.2502</RepositoryUrl>
+		<Authors>ssd</Authors>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Description>.NET 8 wrapper of FNA native libs for FNA.</Description>
+		<PackageTags>fna;xna;net8</PackageTags>
+		<PackageId>FNA.SDL3.NativeAssets</PackageId>
+		<Copyright>Copyright 2025 FNA</Copyright>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Include="DummyApiDefinition.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+
+		<None Include="..\..\x64\SDL3\SDL3.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
+		<None Include="..\..\osx-x64_arm64\SDL3\libSDL3.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+		
+		<None Include="..\..\x64\SDL3\FNA3D.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
+		<None Include="..\..\osx-x64_arm64\SDL3\libFNA3D.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+
+		<None Include="..\..\x64\SDL3\FAudio.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
+		<None Include="..\..\osx-x64_arm64\SDL3\libFAudio.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+
+		<None Include="..\..\x64\libtheorafile.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
+		<None Include="..\..\osx-x64_arm64\libtheorafile.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+	</ItemGroup>
+</Project>
