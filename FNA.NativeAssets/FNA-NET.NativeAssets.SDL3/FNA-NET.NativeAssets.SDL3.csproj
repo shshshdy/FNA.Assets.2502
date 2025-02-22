@@ -27,12 +27,15 @@
 
 		<None Include="..\..\x64\SDL3\SDL3.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
 		<None Include="..\..\osx-x64_arm64\SDL3\libSDL3.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+		<None Include="..\..\arm64\SDL3\SDL3.dll" Pack="true" PackagePath="runtimes\win-arm64\native\" />
 		
 		<None Include="..\..\x64\SDL3\FNA3D.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
 		<None Include="..\..\osx-x64_arm64\SDL3\libFNA3D.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+		<None Include="..\..\arm64\SDL3\FNA3D.dll" Pack="true" PackagePath="runtimes\win-arm64\native\" />
 
 		<None Include="..\..\x64\SDL3\FAudio.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
 		<None Include="..\..\osx-x64_arm64\SDL3\libFAudio.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
+		<None Include="..\..\arm64\SDL3\FAudio.dll" Pack="true" PackagePath="runtimes\win-arm64\native\" />
 
 		<None Include="..\..\x64\libtheorafile.dll" Pack="true" PackagePath="runtimes\win-x64\native\" />
 		<None Include="..\..\osx-x64_arm64\libtheorafile.dylib" Pack="true" PackagePath="runtimes\osx\native\" />
